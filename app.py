@@ -6,7 +6,7 @@ import plotly.subplots as sp
 # Load the dataset
 @st.cache
 def load_df():
-    return pd.read_csv('C:/Users/ASC/Desktop/streamlit-dashboard/dataset.csv')
+    return pd.read_csv('./dataset.csv')
 
 
 df = load_df()
