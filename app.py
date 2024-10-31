@@ -6,7 +6,8 @@ import plotly.subplots as sp
 # Load the dataset
 @st.cache
 def load_df():
-    return pd.read_csv('desktop/streamlit-dashboard/dataset.csv') 
+    return pd.read_csv('C:/Users/ASC/Desktop/streamlit-dashboard/dataset.csv')
+
 
 df = load_df()
 df_grouped = df.groupby(['year', 'sex'])[['total_inactive_population', 'total_unemployed_population', 'total_employed_population','Basic_unemployment','Intermediate_unemployment','Advanced_unemployment','age_group']].sum().reset_index()
